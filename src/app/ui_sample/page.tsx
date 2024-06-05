@@ -30,7 +30,7 @@ const UiSamplePage = () => {
         <Colors />
       </Card>
       <h1 className="font-bold mt-8 text-xl">Buttons</h1>
-      <Card className="flex gap-4 p-2 flex-wrap">
+      <Card className="flex p-2 flex-col">
         <Buttons />
       </Card>
       <h1 className="font-bold mt-8 text-xl">Inputs</h1>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="bg-primary-bg">
+          <div className="w-[1290px] mx-auto">
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/ui_sample"}
+            >
+              ui_sample
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/treeview_sample"}
+            >
+              treeview_sample
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/table_sample_B"}
+            >
+              table_sample_B
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/table_sample_C"}
+            >
+              table_sample_C
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/artifact"}
+            >
+              artifact
+            </Link>
+          </div>
+        </nav>
+
+        <div className="w-[1290px] mx-auto">{children}</div>
+      </body>
     </html>
   );
 }

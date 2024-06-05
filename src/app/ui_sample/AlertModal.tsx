@@ -25,21 +25,27 @@ const AlertModal = ({
           </Button>
         </header>
         <main className="flex items-center m-5 gap-2">
-          <div className="w-10 h-10 bg-secondary rounded-full flex justify-center items-center">
+          <div className="w-10 h-10 bg-destructive text-white rounded-full flex justify-center items-center">
             icon
           </div>
-          <div className="flex-1">contents</div>
+          <div className="flex-1 break-all text-sm">
+            TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+          </div>
         </main>
         <footer className="flex gap-2 mx-5 mb-5">
           <Button
-            className="flex-1 h-[30px]"
+            className="flex-1 h-[30px] rounded-md"
             variant={"secondary"}
             onClick={() => setOpen(false)}
           >
-            close
+            Close
           </Button>
-          <Button className="flex-1 h-[30px]" onClick={() => setOpen(false)}>
-            confirm
+          <Button
+            className="flex-1 h-[30px] rounded-md"
+            variant={"destructive"}
+            onClick={() => setOpen(false)}
+          >
+            OK
           </Button>
         </footer>
       </AlertDialogContent>
