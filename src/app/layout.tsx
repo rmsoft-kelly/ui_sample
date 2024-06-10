@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav className="bg-primary-bg">
-          <div className="w-[1290px] mx-auto">
+          <div className="max-w-[1290px] mx-auto">
             <Link
               className={buttonVariants({ variant: "link" })}
               href={"/ui_sample"}
@@ -32,6 +32,12 @@ export default function RootLayout({
               href={"/treeview_sample"}
             >
               treeview_sample
+            </Link>
+            <Link
+              className={buttonVariants({ variant: "link" })}
+              href={"/table_sample_A"}
+            >
+              table_sample_A
             </Link>
             <Link
               className={buttonVariants({ variant: "link" })}
